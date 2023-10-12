@@ -1,0 +1,16 @@
+zero = lambda operator=None: 0 if not operator else operator[0](operator[1], 0)
+one = lambda operator=None: 1 if not operator else operator[0](operator[1], 1)
+two = lambda operator=None: 2 if not operator else operator[0](operator[1], 2)
+three = lambda operator=None: 3 if not operator else operator[0](operator[1], 3)
+four = lambda operator=None: 4 if not operator else operator[0](operator[1], 4)
+five = lambda operator=None: 5 if not operator else operator[0](operator[1], 5)
+six = lambda operator=None: 6 if not operator else operator[0](operator[1], 6)
+seven = lambda operator=None: 7 if not operator else operator[0](operator[1], 7)
+eight = lambda operator=None: 8 if not operator else operator[0](operator[1], 8)
+nine = lambda operator=None: 9 if not operator else operator[0](operator[1], 9)
+
+
+plus = lambda x, y = None: x + y if y is not None else (plus, x)
+minus = lambda x, y = None: y - x if y is not None else (minus, x)
+divided_by = lambda x, y = None: y // x if y is not None else (divided_by, x)
+times = lambda x, y = None: x * y if y is not None else (times, x)
